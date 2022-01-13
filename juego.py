@@ -6,7 +6,7 @@ def juego():
     ronda=1
     premio=Premio()
     jugador=Jugador()
-    nombre= input("ESCRIBE TU NOMBRE\n >")
+    nombre= input("ESCRIBE TU NOMBRE\n>")
     jugador.set_nombre(nombre)
 
     
@@ -20,6 +20,8 @@ def juego():
         respuesta = input('ELIJE RESPUESTA :\n ')
         if pregunta1.validar_respuesta(respuesta) :
             if ronda==5:
+                
+                premio.aumentar_dificultad()
                 jugador.set_monto(premio.premio())
                 print("FELICIDADES!!! , GANASTE EL JUEGO TU MONTO ES DE: ",jugador.monto )
                 break    

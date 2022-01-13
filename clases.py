@@ -4,7 +4,7 @@ class Pregunta():
     def __init__(self):
         self.pregunta=""
     def seleccionar_pregunta(self,ronda):
-        n=random.randint(1,4)
+        n=random.randint(1,5)
         self.pregunta=banco_preguntas[ronda][n]
         return self
     def get_pregunta(self):  
@@ -31,7 +31,7 @@ class Jugador():
         return self.monto    
 
     def guardar_jugador(self):
-        banco_jugadores.append({self.nombre:self.monto})
+        banco_jugadores.append({'nombre':self.nombre,'monto':self.monto})
 
 
 class Premio():
@@ -45,7 +45,8 @@ class Premio():
        
    
        
-        
+        if self.dificultad==5:
+             self.premio=1000000 
         if self.dificultad==4:
              self.premio=100000   
         if self.dificultad==3:
