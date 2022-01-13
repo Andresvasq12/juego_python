@@ -1,5 +1,6 @@
 import random
 from datos import banco_jugadores,banco_preguntas
+
 class Pregunta():
     def __init__(self):
         self.pregunta=""
@@ -42,9 +43,6 @@ class Premio():
         self.dificultad+=1
 
     def premio(self):
-       
-   
-       
         if self.dificultad==5:
              self.premio=1000000 
         if self.dificultad==4:
@@ -57,4 +55,7 @@ class Premio():
              self.premio=100            
        
         return self.premio                       
+       
+   
+       
         

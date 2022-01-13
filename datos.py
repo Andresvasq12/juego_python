@@ -1,3 +1,5 @@
+#Diccionario  de preguntas agrupadas por ronda
+
 banco_preguntas={   1:{
     1:{"pregunta":"Cual es la capital de Colombia\n A:Cali B:Medellin C:Bogota D:Bogota","respuesta":"C"},
     2:{"pregunta":"Cual es la capital de Argentina\n A:Montevideo B:Medellin C:San Andres D:Buenos Aires","respuesta":"D"},
@@ -34,4 +36,7 @@ banco_preguntas={   1:{
 }
 
 }
+
+
+
 banco_jugadores=[]
