@@ -2,6 +2,7 @@ from clases import Jugador,Pregunta,Premio
 from datos import banco_jugadores
 
 
+
 def juego():
     ronda=1
     premio=Premio()
@@ -15,6 +16,7 @@ def juego():
         
         pregunta1 = Pregunta().seleccionar_pregunta(ronda)
         pregunta=pregunta1.get_pregunta()
+        print("--- --- ---")
         print(pregunta)
         
         respuesta = input('ELIJE RESPUESTA :\n ')
@@ -29,7 +31,9 @@ def juego():
             else:
                 ronda+=1
                 premio.aumentar_dificultad()
+                print("--- --- ---")
                 print("GANASTE")
+                print("--- --- ---")
                 resq=input("desea continuar y/n:\n> ")
                 
                 if resq=='y':    

@@ -10,7 +10,7 @@ def menu():
           print("-----------")
           print("SELECCIONA UNA OPCION")
           print("-----------")
-          print("[1] Ver Puntajes\n[2] Iniciar juego")
+          print("[1] Ver Puntajes\n[2] Iniciar juego\n[3] Salir juego")
           n=input("> ")
            
           if n=="1":
@@ -22,7 +22,10 @@ def menu():
           if n=="2":
                juego()
 
-          input("\nPresiona ENTER para continuar...")     
+          input("\nPresiona ENTER para continuar...") 
+
+          if n=="3":
+               break    
                
       
 menu()       
