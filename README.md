@@ -1,6 +1,6 @@
 # juego_python
 
-Correr desde la consola en la ruta de la carpeta 
+Correr el archivo menu.py desde la consola en la ruta de la carpeta 
 
 (Nota:  tener Python en el PATH del sistema operativo)
 
