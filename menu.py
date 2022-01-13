@@ -1,6 +1,7 @@
 from juego import juego 
 from datos import banco_jugadores
-import os
+
+
 def menu():
      while True:  
           print("-----------")
@@ -16,11 +17,8 @@ def menu():
                if banco_jugadores==[]:
                     print("AUN NO HAY REGISTROS")
                for jugador in banco_jugadores:
-                   print(f"NOMBRE {jugador['nombre']}: PUNTAJE{jugador['monto']} ")
-               
-
-               
-
+                   print("-- -- -- --")
+                   print(f"NOMBRE {jugador['nombre']}: PUNTAJE {jugador['monto']} ")
           if n=="2":
                juego()
 
@@ -28,6 +26,10 @@ def menu():
                
       
 menu()       
+               
+
+               
+
                   
               
 
